@@ -27,6 +27,10 @@ public class AddSimpleSaleController {
             response.setText(DatabaseConnection.callAddSimpleSaleToDb(custId, prodId, quantity));
         } catch (NumberFormatException e) {
             response.setText("Invalid input. The inputs must be number");
+        } finally {
+            this.custId.setText("");
+            this.prodId.setText("");
+            this.quantity.setText("");
         }
     }
 }

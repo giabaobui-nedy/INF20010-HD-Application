@@ -2,7 +2,6 @@ package com.example.demo;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 public class AddComplexSaleController {
@@ -34,6 +33,11 @@ public class AddComplexSaleController {
             response.setText(DatabaseConnection.callAddComplexSale(custId, prodId, quantity, date));
         } catch (NumberFormatException e) {
             response.setText("Invalid input. The inputs must be number");
+        } finally {
+            this.custId.setText("");
+            this.prodId.setText("");
+            this.quantity.setText("");
+            this.date.setText("");
         }
     }
 }
