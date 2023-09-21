@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.demo.HelloApplication"
+           prefHeight="150.0"
+           prefWidth="200.0">
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+        <top>
+            <!-- Center the MenuBar within the AnchorPane -->
+            <MenuBar BorderPane.alignment="CENTER">
+                <Menu mnemonicParsing="false" text="Customer">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Add a customer"/>
+                        <MenuItem mnemonicParsing="false" text="Delete all customers"/>
+                        <MenuItem mnemonicParsing="false" text="Search a customer"/>
+                        <MenuItem mnemonicParsing="false" text="Update customer sales"/>
+                        <MenuItem mnemonicParsing="false" text="Update customer status"/>
+                        <MenuItem mnemonicParsing="false" text="View total sales from all customers"/>
+                        <MenuItem mnemonicParsing="false" text="View all customers"/>
+                        <MenuItem mnemonicParsing="false" text="Delete a customer"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Product">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Add a product"/>
+                        <MenuItem mnemonicParsing="false" text="Delete all products"/>
+                        <MenuItem mnemonicParsing="false" text="Search a product"/>
+                        <MenuItem mnemonicParsing="false" text="Update product sales"/>
+                        <MenuItem mnemonicParsing="false" text="View all products"/>
+                        <MenuItem mnemonicParsing="false" text="Delete a product"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sale">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Add a simple sale"/>
+                        <MenuItem mnemonicParsing="false" text="Add a complex sale"/>
+                        <MenuItem mnemonicParsing="false" text="View all sales"/>
+                        <MenuItem mnemonicParsing="false" text="Count sales within"/>
+                        <MenuItem mnemonicParsing="false" text="Delete a sale record"/>
+                        <MenuItem mnemonicParsing="false" text="Delete all sales"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+        </top>
+    </BorderPane>
+</VBox>
